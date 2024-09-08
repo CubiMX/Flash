@@ -2,10 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Fancy Pants Adventure</title>
+    <title>Juego Flash con Ruffle</title>
     <script src="https://unpkg.com/@ruffle/ruffle@latest/dist/ruffle.js"></script>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #flash-content {
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+      }
+    </style>
   </head>
   <body>
+    <h1>Fancy Pants</h1>
     <div id="flash-content">
       <script>
         const ruffle = window.RufflePlayer.newest();
@@ -13,7 +27,6 @@
         document.getElementById("flash-content").appendChild(player);
         player.load("https://www.dropbox.com/scl/fi/mzi6chnmc66yb4fstklkh/Fancy-Pants.swf?rlkey=nsngqbzjlhs4dswmqa9d7y2x4&st=g6ujfaep&dl=1");
       </script>
-      <div id="flash-container"></div>
     </div>
   </body>
 </html>
