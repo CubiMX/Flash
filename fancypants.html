@@ -19,14 +19,13 @@
     </style>
   </head>
   <body>
-    <h1>Fancy Pants</h1>
-    <div id="flash-content">
-      <script>
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        document.getElementById("flash-content").appendChild(player);
-        player.load("http://chat.kongregate.com/gamez/0000/0017/live/FPAWorld1_07a.swf?kongregate_game_version=1314677518");
-      </script>
-    </div>
+    <h1>Juego Flash</h1>
+    <div id="flash-content"></div>
+    <script>
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("flash-content").appendChild(player);
+      player.load("Fancy Pants.swf");
+    </script>
   </body>
 </html>
