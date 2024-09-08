@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Juego Flash con Ruffle</title>
+    <script src="https://unpkg.com/@ruffle/ruffle@latest/dist/ruffle.js"></script>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      #flash-content {
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Juego Flash</h1>
+    <div id="flash-content"></div>
+    <script>
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("flash-content").appendChild(player);
+      player.load("Angry Birds.swf");
+    </script>
+  </body>
+</html>
