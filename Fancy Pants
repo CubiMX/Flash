@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fancy Pants Adventure</title>
+    <script src="https://unpkg.com/@ruffle/ruffle@latest/dist/ruffle.js"></script>
+  </head>
+  <body>
+    <div id="flash-content">
+      <script>
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("flash-content").appendChild(player);
+        player.load("https://www.dropbox.com/scl/fi/mzi6chnmc66yb4fstklkh/Fancy-Pants.swf?rlkey=nsngqbzjlhs4dswmqa9d7y2x4&st=g6ujfaep&dl=1");
+      </script>
+      <div id="flash-container"></div>
+    </div>
+  </body>
+</html>
